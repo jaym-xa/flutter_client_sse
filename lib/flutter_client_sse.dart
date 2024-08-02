@@ -82,7 +82,7 @@ class SSEClient {
                         (currentSSEModel.data ?? '') + value + '\n';
                     break;
                   case 'id':
-                    currentSSEModel.id = value;
+                    currentSSEModel.id = data.statusCode.toString();
                     break;
                   case 'retry':
                     break;
